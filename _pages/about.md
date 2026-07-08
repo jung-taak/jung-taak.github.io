@@ -11,7 +11,7 @@ I am a Ph.D. student at the Vehicle Intelligence Lab at Seoul National Universit
 
 Our lab develops and deploys field robots that perform autonomous driving in outdoor and off-road environments. Recently, my work has centered on improving the safety of learning-based navigation models.
 
-## Research Interests
+<h2 style="border-bottom: none; padding-bottom: 0;">Research Interests</h2>
 - Visual navigation
 - Diffusion policy
 - Path planning
