@@ -5,6 +5,10 @@ category: conferences
 permalink: /publication/2026-06-25-ordinal-neural-collapse-visual-navigation
 date: 2026-06-25
 venue: "European Conference on Computer Vision (ECCV)"
+authors:
+  - "E-In Son*"
+  - "Jung-Taak Kim*"
+  - "Seung-Woo Seo"
 header:
   teaser: "ORION.png"
 paperurl: "https://arxiv.org/abs/2606.26839"
