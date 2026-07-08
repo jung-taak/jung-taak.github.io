@@ -19,5 +19,8 @@
       {% if post.venue %}<p>{{ post.venue }}</p>{% endif %}
       {% if post.excerpt %}<p>{{ post.excerpt | markdownify }}</p>{% endif %}
     {% endif %}
+    {% if post.paperurl %}
+      <p><a href="{{ post.paperurl }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Paper</a></p>
+    {% endif %}
   </div>
 </div>

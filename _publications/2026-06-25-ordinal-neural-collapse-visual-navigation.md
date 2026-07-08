@@ -7,6 +7,7 @@ date: 2026-06-25
 venue: "European Conference on Computer Vision (ECCV)"
 header:
   teaser: "ORION.png"
+paperurl: "https://arxiv.org/abs/2606.26839"
 citation: 'Son, E.-I.*, Kim, J.-T.*, Seo, S.-W. (2026). &quot;Ordinal Neural Collapse as a Representation Prior for Visual Navigation.&quot; <i>European Conference on Computer Vision (ECCV)</i>. (* Equal contribution)'
 ---
 
