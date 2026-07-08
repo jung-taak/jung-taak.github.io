@@ -17,7 +17,7 @@ Our lab develops and deploys field robots that perform autonomous driving in out
 - Path planning
 - Safety of learning-based navigation models
 
-<hr>
+<hr style="border: none; border-top: 2px solid var(--global-text-color); opacity: 0.35; margin: 2.5em 0;">
 
 <a id="publications"></a>
 
@@ -27,7 +27,7 @@ Publications
   {% include entry-row.html %}
 {% endfor %}
 
-<hr>
+<hr style="border: none; border-top: 2px solid var(--global-text-color); opacity: 0.35; margin: 2.5em 0;">
 
 <a id="projects"></a>
 
@@ -37,7 +37,7 @@ Projects
   {% include entry-row.html %}
 {% endfor %}
 
-<hr>
+<hr style="border: none; border-top: 2px solid var(--global-text-color); opacity: 0.35; margin: 2.5em 0;">
 
 <a id="awards"></a>
 
