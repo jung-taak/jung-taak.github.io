@@ -11,7 +11,7 @@ I am a Ph.D. student at the Vehicle Intelligence Lab at Seoul National Universit
 
 Our lab develops and deploys field robots that perform autonomous driving in outdoor and off-road environments. Recently, my work has centered on improving the safety of learning-based navigation models.
 
-#### Research Interests
+### Research Interests
 - Learning-based autonomous navigation
 - Visual navigation
 - Diffusion policy
@@ -22,33 +22,28 @@ Our lab develops and deploys field robots that perform autonomous driving in out
 
 Publications
 ======
-{% include base_path %}
-<div class="grid__wrapper">
 {% for post in site.publications reversed %}
-  {% include archive-single.html type="grid" %}
+  {% include entry-row.html %}
 {% endfor %}
-</div>
 
 <a id="projects"></a>
 
 Projects
 ======
-<div class="grid__wrapper">
 {% for post in site.projects reversed %}
-  {% include archive-single.html type="grid" %}
+  {% include entry-row.html %}
 {% endfor %}
-</div>
 
 <a id="awards"></a>
 
 Awards
 ======
-<div class="list__item">
-  <article class="archive__item">
-    <div class="archive__item-teaser">
-      <img src="/images/earth_rover_challenge.jpeg" alt="">
-    </div>
-    <h2 class="archive__item-title">1st Place — Earth Rovers Challenge</h2>
+<div class="entry-row">
+  <div class="entry-row__image">
+    <img src="/images/earth_rover_challenge.jpeg" alt="">
+  </div>
+  <div class="entry-row__content">
+    <h3>1st Place — Earth Rovers Challenge</h3>
     <p>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Oct 2024</p>
-  </article>
+  </div>
 </div>

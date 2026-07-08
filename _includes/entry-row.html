@@ -1,0 +1,22 @@
+{% include base_path %}
+
+<div class="entry-row">
+  {% if post.header.teaser %}
+    <div class="entry-row__image">
+      {% if post.header.teaser contains "://" %}
+        <img src="{{ post.header.teaser }}" alt="">
+      {% else %}
+        <img src="{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="">
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="entry-row__content">
+    <h3><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+    {% if post.collection == 'publications' %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    {% elsif post.venue %}
+      <p>{{ post.venue }}</p>
+    {% endif %}
+    {% if post.excerpt %}<p>{{ post.excerpt | markdownify }}</p>{% endif %}
+  </div>
+</div>
