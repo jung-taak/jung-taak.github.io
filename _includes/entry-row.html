@@ -1,22 +1,23 @@
 {% include base_path %}
 
-<div class="entry-row">
+<div style="display: flex; align-items: flex-start; gap: 1.5em; margin-bottom: 2em; flex-wrap: wrap;">
   {% if post.header.teaser %}
-    <div class="entry-row__image">
+    <div style="flex: 0 0 auto; width: 200px; max-width: 100%; height: 140px; position: relative; overflow: hidden; border-radius: 6px; background-color: var(--global-bg-color);">
       {% if post.header.teaser contains "://" %}
-        <img src="{{ post.header.teaser }}" alt="">
+        {% capture teaser_src %}{{ post.header.teaser }}{% endcapture %}
       {% else %}
-        <img src="{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="">
+        {% capture teaser_src %}{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}{% endcapture %}
       {% endif %}
+      <img src="{{ teaser_src }}" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
     </div>
   {% endif %}
-  <div class="entry-row__content">
-    <h3><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+  <div style="flex: 1 1 300px; min-width: 0;">
+    <h3 style="margin-top: 0; margin-bottom: 0.25em;"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
     {% if post.collection == 'publications' %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-    {% elsif post.venue %}
-      <p>{{ post.venue }}</p>
+    {% else %}
+      {% if post.venue %}<p>{{ post.venue }}</p>{% endif %}
+      {% if post.excerpt %}<p>{{ post.excerpt | markdownify }}</p>{% endif %}
     {% endif %}
-    {% if post.excerpt %}<p>{{ post.excerpt | markdownify }}</p>{% endif %}
   </div>
 </div>

@@ -38,12 +38,12 @@ Projects
 
 Awards
 ======
-<div class="entry-row">
-  <div class="entry-row__image">
-    <img src="/images/earth_rover_challenge.jpeg" alt="">
+<div style="display: flex; align-items: flex-start; gap: 1.5em; margin-bottom: 2em; flex-wrap: wrap;">
+  <div style="flex: 0 0 auto; width: 200px; max-width: 100%; height: 140px; position: relative; overflow: hidden; border-radius: 6px; background-color: var(--global-bg-color);">
+    <img src="/images/earth_rover_challenge.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
   </div>
-  <div class="entry-row__content">
-    <h3>1st Place — Earth Rovers Challenge</h3>
+  <div style="flex: 1 1 300px; min-width: 0;">
+    <h3 style="margin-top: 0; margin-bottom: 0.25em;">1st Place — Earth Rovers Challenge</h3>
     <p>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Oct 2024</p>
   </div>
 </div>
