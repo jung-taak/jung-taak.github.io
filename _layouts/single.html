@@ -52,7 +52,13 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.paperurl or page.projecturl or page.link %}
+          <div>
+            {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+            {% if page.projecturl %}<a href="{{ page.projecturl }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Project Page</a>{% endif %}
+            {% if page.link %}<a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a>{% endif %}
+          </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">

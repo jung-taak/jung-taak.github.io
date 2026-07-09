@@ -12,6 +12,7 @@ authors:
 header:
   teaser: "ORION.png"
 paperurl: "https://arxiv.org/abs/2606.26839"
+projecturl: "https://pingpang584.github.io/projects/orion/index.html"
 citation: 'Son, E.-I.*, Kim, J.-T.*, Seo, S.-W. (2026). &quot;Ordinal Neural Collapse as a Representation Prior for Visual Navigation.&quot; <i>European Conference on Computer Vision (ECCV)</i>. (* Equal contribution)'
 ---
 
