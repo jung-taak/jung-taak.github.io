@@ -35,8 +35,14 @@ layout: default
         {% endif %}
         
         {% if page.authors %}
-          {% assign authors_str = page.authors | join: "" %}
-          <p>{{ page.authors | join: ", " }}{% if authors_str contains "*" %} <small>(* equal contribution)</small>{% endif %}</p>
+          {% assign author_names = page.authors | map: "name" %}
+          {% assign authors_str = author_names | join: "" %}
+          <p>
+            {% for author in page.authors %}
+              {% if author.url %}<a href="{{ author.url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            {% if authors_str contains "*" %} <small>(* equal contribution)</small>{% endif %}
+          </p>
         {% endif %}
 
         {% if page.collection == 'teaching' %}

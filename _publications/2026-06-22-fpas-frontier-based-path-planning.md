@@ -6,11 +6,12 @@ permalink: /publication/2026-06-22-fpas-frontier-based-path-planning
 date: 2026-06-22
 venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
 authors:
-  - "Jinwoo Choi"
-  - "Yeonkyu Lee"
-  - "Jung-Taak Kim"
-  - "Jisung Bae"
-  - "Seung-Woo Seo"
+  - name: "Jinwoo Choi"
+    url: "https://wlsdn9350.github.io/"
+  - name: "Yeonkyu Lee"
+  - name: "Jung-Taak Kim"
+  - name: "Jisung Bae"
+  - name: "Seung-Woo Seo"
 header:
   teaser: "FPAS.png"
 paperurl: "https://arxiv.org/abs/2606.22838"
