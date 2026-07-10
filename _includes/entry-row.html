@@ -17,12 +17,12 @@
       {% if post.authors %}
         {% assign author_names = post.authors | map: "name" %}
         {% assign authors_str = author_names | join: "" %}
-        <p>
+        <p style="margin-bottom: {% if authors_str contains "*" %}0.15em{% else %}1em{% endif %};">
           {% for author in post.authors %}
             {% if author.url %}<a href="{{ author.url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
           {% endfor %}
-          {% if authors_str contains "*" %} <small>(* equal contribution)</small>{% endif %}
         </p>
+        {% if authors_str contains "*" %}<p style="margin-top: 0; margin-bottom: 1em;"><small>* equal contribution</small></p>{% endif %}
       {% endif %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% else %}
